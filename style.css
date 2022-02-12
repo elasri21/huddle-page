@@ -132,7 +132,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 @media screen and (max-width: 500px) {
   .statics {
