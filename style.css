@@ -120,7 +120,7 @@ h1 {
 /*section style*/
 section {
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .screen-section {
   width: 100%;
@@ -223,6 +223,7 @@ section {
 .together,
 .conversation,
 .users {
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,6 +258,9 @@ section {
   .users .image,
   .together .image {
     order: 1;
+  }
+  .information {
+    margin-top: 20px;
   }
 }
 .ready {
