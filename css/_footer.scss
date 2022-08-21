@@ -1,10 +1,10 @@
 footer {
     @media #{$small} {
-        padding: 30px 50px;
         .top-of-footer {
             background-image: url("../images/bg-footer-top-desktop.svg");
         }
         .footer-data {
+            padding: 30px 50px;
             justify-content: space-between;
             .contact-us {
                 width: 45%;
@@ -46,7 +46,7 @@ footer {
         background-size: 100% 100%;
     }
     .footer-data {
-        padding: 15px;
+        padding: 30px 30px;
         display: flex;
         background-color: $footer-bg;
         .contact-us {
@@ -99,7 +99,6 @@ footer {
         }
 
     }
-    padding: 30px 30px;
 }
 
 .attribution {
