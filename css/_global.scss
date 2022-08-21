@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: $body-font;
+    font-size: $body-size;
+    background-color: $white;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
+  font-weight: 700;
+  color: $footer-bg;
+  margin-bottom: 20px;
+}
+p {
+    font-weight: 600;
+    color: $text-color;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    &.email {
+        background-color: $white;
+        margin-right: 15px;
+        color: $footer-bg;
+    }
+    &.submit {
+        cursor: pointer;
+        background-color: $btn-bg;
+        border-color: $btn-bg;
+        color: $white;
+        &:hover {
+            background-color: $btn-hover-bg;
+            border-color: $btn-hover-bg;
+            box-shadow: 0.5px 0.5px 0.5px $btn-hover-bg;
+            box-shadow: 1px 1px 1px $btn-hover-bg;
+        }
+    }
+  }

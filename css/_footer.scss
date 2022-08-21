@@ -1,0 +1,111 @@
+footer {
+    @media #{$small} {
+        padding: 30px 50px;
+        .top-of-footer {
+            background-image: url("../images/bg-footer-top-desktop.svg");
+        }
+        .footer-data {
+            justify-content: space-between;
+            .contact-us {
+                width: 45%;
+            }
+            .subscribe {
+                width: 50%;
+            }
+        }
+    }
+    @media #{$mobile} {
+        .footer-data {
+            flex-direction: column;
+            .contact-us{
+                order: 2;
+            }
+            .subscribe{
+                order: 1;
+                form {
+                    width: 100%;
+                    text-align: right;
+                    input {
+                        &.email {
+                            width: 100%;
+                        }
+                        &.submit {
+                            margin-top: 15px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top-of-footer {
+        height: 70px;
+        background-image: url("../images/bg-footer-top-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 100% 100%;
+    }
+    .footer-data {
+        padding: 15px;
+        display: flex;
+        background-color: $footer-bg;
+        .contact-us {
+            .logo {
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            p {
+                margin-top: 15px;
+                color: $light-text;
+                font-size: 12px;
+                font-weight: 400;
+                img {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+            .social {
+                a {
+                    color: $white;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        color: rgb(120, 225, 225);
+                    }
+                }
+            }
+        }
+        .subscribe {
+            h2 {
+                color: $white;
+                text-transform: uppercase;
+            }
+            p {
+                margin-top: 15px;
+                color: $light-text;
+                font-size: 12px;
+                font-weight: 400;
+            }
+            .error {
+                display: none;
+                font-size: 10px;
+                color: $error-color;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    padding: 30px 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

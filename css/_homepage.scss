@@ -1,0 +1,118 @@
+.info {
+    @media #{$small} {
+        padding: 30px 60px;
+        p {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    padding: 30px 30px;
+    text-align: center;
+}
+.screen-sec {
+    @media #{$small}{
+        padding: 30px 60px;
+        .statics {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    padding: 30px 30px;
+    .screen {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .statics {
+        margin-top: 30px;
+        & > div {
+            text-align: center;
+            .icon {
+                margin-bottom: 15px;
+            }
+            p {
+                text-transform: capitalize;
+                color: $static-text;
+            }
+        }
+    }
+
+}
+
+.same {
+    @media #{$small} {
+        padding: 30px 50px;
+        justify-content: space-between;
+        align-items: center;
+        .information {
+            width: 50%;
+            h2, p {
+                text-align: left !important;
+            }
+        }
+        .image {
+            width: 48%;
+        }
+    }
+    @media #{$mobile} {
+        flex-direction: column;
+        .information {
+            order: 2;
+        }
+        .image {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    }
+    padding: 30px 30px;
+    display: flex;
+    .information{
+        h2, p {
+            text-align: center;
+        }
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.ready-sec {
+    text-align: center;
+}
+.top-1, .top-2, .bottom-1, .bottom-2 {
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.users, .together {
+    background-color: hsl(207, 100%, 98%);
+}
+.top-1 {
+    @media #{$small} {
+        background-image: url("../images/bg-section-top-desktop-1.svg");
+    }
+    background-image: url("../images/bg-section-top-mobile-1.svg");
+}
+.top-2 {
+    @media #{$small} {
+        background-image: url("../images/bg-section-top-desktop-2.svg");
+    }
+    background-image: url("../images/bg-section-top-mobile-2.svg");
+}
+.bottom-1 {
+    @media #{$small} {
+        background-image: url("../images/bg-section-bottom-desktop-1.svg");
+    }
+    background-image: url("../images/bg-section-bottom-mobile-1.svg");
+}
+.bottom-2 {
+    @media #{$small} {
+        background-image: url("../images/bg-section-bottom-desktop-2.svg");
+    }
+    background-image: url("../images/bg-section-bottom-mobile-2.svg");
+}

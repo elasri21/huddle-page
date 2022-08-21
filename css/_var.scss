@@ -1,0 +1,20 @@
+// primary color
+$btn-bg: hsl(322, 100%, 66%);
+$btn-hover-bg: hsl(321, 100%, 78%);
+$error-color: hsl(0, 100%, 63%);
+
+/*neutral colors*/
+$footer-bg: hsl(192, 100%, 9%);// and heading color
+$text-color: hsl(208, 8%, 44%);
+$white: hsl(0, 100%, 100%);
+$static-text: hsl(0, 0%, 60%);
+$light-text: hsl(207, 100%, 98%);
+
+// fonts
+$body-font: "Open Sans", sans-serif;
+$heading-font: "Poppins", sans-serif;
+$body-size: 18px;
+
+// break point
+$small: '(min-width: 768px)';
+$mobile: '(max-width: 767px)';
